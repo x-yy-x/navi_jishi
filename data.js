@@ -9,7 +9,7 @@ const buildingData = {
       "description": "教学管理、行政办公与实验科研楼层",
       "imageWidth": 1045,
       "imageHeight": 1291,
-      "imagePath": "4_plat.png",
+      "imagePath": "images/4_plat.png",
       "rooms": [
         {
           "id": "426",
@@ -1254,9 +1254,9 @@ const buildingData = {
         },
         {
           "id": "restroom4_m",
-          "name": "男厕",
+          "name": "厕所",
           "type": "restroom",
-          "icon": "🚹",
+          "icon": "🚻",
           "shapeType": "rect",
           "x": 722,
           "y": 96,
@@ -1571,7 +1571,7 @@ const buildingData = {
       "description": "科研实验室与教师工作室楼层",
       "imageWidth": 901,
       "imageHeight": 1376,
-      "imagePath": "5_plat.png",
+      "imagePath": "images/5_plat.png",
       "rooms": [
         {
           "id": "519",
