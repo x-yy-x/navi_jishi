@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>济事楼导览系统</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header-left">
+      <h1>🏛 济事楼导览系统</h1>
+      <span class="subtitle">同济大学 · 软件学院</span>
+    </div>
+    <div class="header-controls">
+      <div class="floor-tabs">
+        <button class="floor-btn active" data-floor="4">4F</button>
+        <button class="floor-btn" data-floor="5">5F</button>
+      </div>
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="搜索房间、人员关键词...">
+        <span class="search-icon">🔍</span>
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-submenu" id="searchSubmenu"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <div class="main-container">
+    <div class="map-area">
+      <div class="floor-desc" id="floorDesc">4F · 行政办公与教学楼层</div>
+      <div class="pin-indicator" id="pinIndicator" style="display:none">📌 标定模式 — 再次点击房间取消</div>
+      <div class="svg-container">
+        <svg id="floorPlan" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+    </div>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-placeholder" id="placeholder">
+        <div class="icon">🏛</div>
+        <div class="text">
+          将鼠标悬停在地图房间上<br>
+          或搜索关键词查看房间详情
+        </div>
+      </div>
+      <div class="room-detail" id="roomDetail" style="display:none"></div>
+    </aside>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
