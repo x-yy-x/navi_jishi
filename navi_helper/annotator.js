@@ -35,8 +35,8 @@
   };
 
   const IMG_PATHS = {
-    4: '4_plat.png',
-    5: '5_plat.png',
+    4: '../images/4_plat.png',
+    5: '../images/5_plat.png',
   };
 
   const TYPE_COLORS = {
@@ -688,7 +688,7 @@
           label: f + 'F',
           imageWidth: img ? img.width : 0,
           imageHeight: img ? img.height : 0,
-          imagePath: IMG_PATHS[f],
+          imagePath: f + '_plat.png',
           rooms: S.data[f].rooms.map(r => {
             const bounds = getBounds(r.shape);
             return {
